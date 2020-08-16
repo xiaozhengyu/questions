@@ -1,32 +1,32 @@
-# group by¡¢group_concat()¡¢if()
+# group byã€group_concat()ã€if()
 
 ---
 
-1. ?Í­°ì??Äø??É½¡¤É½?Ã¨Ç¡²¼¡§
+1. ç°æœ‰ä¸€åŸ¹è®­è¯¾ç¨‹è¡¨ï¼Œè¡¨ç»“æ„å¦‚ä¸‹ï¼š
 
-| »úÃÊÌ¾          | ?·¿    | ?ÅÙ | ?   | Ãí?                                |
-| --------------- | ------- | ---- | ---- | ----------------------------------- |
-| id              | varchar | 32   | ¢å    |                                     |
-| trainName       | varchar | 255  |      | Çİ??ÄøÌ¾¾Î                        |
-| insideTeacher   | varchar | 255  |      | ÆâÉô??À«Ì¾                        |
-| outsideTeacher  | varchar | 255  |      | ³°Éô??À«Ì¾                        |
-| insideOrOutside | varcher | 2    |      | ???·¿¡Ê0¡§ÆâÉô?? 1¡§³°Éô??¡Ë |
+| å­—æ®µå          | ?å‹     | ?åº¦  | ä¸»?  | ?æ³¨                              |
+| --------------- | ------- | ---- | ---- | -------------------------------- |
+| id              | varchar | 32   | âˆš    |                                  |
+| trainName       | varchar | 255  |      | åŸ¹è®­è¯¾ç¨‹åç§°                     |
+| insideTeacher   | varchar | 255  |      | å†…éƒ¨è®²å¸ˆå§“å                     |
+| outsideTeacher  | varchar | 255  |      | å¤–éƒ¨è®²å¸ˆå§“å                     |
+| insideOrOutside | varcher | 2    |      | ??å‹ï¼ˆ0ï¼šå†…éƒ¨è®²å¸ˆ  1ï¼šå¤–éƒ¨è®²å¸ˆï¼‰ |
 
-2. É½ÃæÍ­Ç¡²¼¿ô¿ø¡§
+2. è¡¨ä¸­æœ‰å¦‚ä¸‹æ•°æ®ï¼š
 
-![image-20200610105048897](markdown/group by¡¢group_concat()¡¢if.assets/image-20200610105048897.png)
+![image-20200610105048897](markdown/group byã€group_concat()ã€if2.assets/image-20200610105048897.png)
 
-3. ?ºß¼ûÍ×??Ç¡²¼³Ê¼°Åª¿ô¿ø¡§
+3. ç°åœ¨éœ€è¦è·å–å¦‚ä¸‹æ ¼å¼çš„æ•°æ®ï¼š
 
-   > |trainName|trainTeacher|
+    > |trainName|trainTeacher|
 
-4. »×Ï©¡§
+4. æ€è·¯ï¼š
 
->1. ¼ûÍ×º¬¿øtrainName?¿ô¿ø?¹ÔÊ¬?¡¨
->2. »ÈÍÑgroup_concat()ÊıË¡?Ê¬?¿ô¿ø?¹Ô¿ÙÀÜ¡¨
->3. »ÈÍÑif()È½ÃÇ»ÈÍÑinsideTeacher?À§outsideTeacher?¹Ô¿ÙÀÜ¡£
+>1. éœ€è¦æ ¹æ®trainNameå¯¹æ•°æ®è¿›è¡Œåˆ†ç»„ï¼›
+>2. ä½¿ç”¨group_concat()æ–¹æ³•å°†åˆ†ç»„æ•°æ®è¿›è¡Œæ‹¼æ¥ï¼›
+>3. ä½¿ç”¨if()åˆ¤æ–­ä½¿ç”¨insideTeacherè¿˜æ˜¯outsideTeacherè¿›è¡Œæ‹¼æ¥ã€‚
 
-5. ?»Ü¡§
+5. å®æ–½ï¼š
 
 ```sql
 SELECT
@@ -40,7 +40,7 @@ GROUP BY
 	t.trainName
 ```
 
-6. ?²Ì¡§
+6. ç»“æœï¼š
 
-![image-20200610105233536](markdown/group by¡¢group_concat()¡¢if.assets/image-20200610105233536.png)
+![image-20200610105233536](markdown/group byã€group_concat()ã€if2.assets/image-20200610105233536.png)
 
