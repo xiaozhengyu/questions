@@ -33,9 +33,9 @@ ON
 BEGIN
     IF 
         OLD.delete_flag = '0' and NEW.delete_flag = '1'
-	THEN 
-	    SET NEW.delete_date = NOW();
-	END IF;
+	  THEN 
+	      SET NEW.delete_date = NOW();
+	  END IF;
 END $$
 
 DELIMITER ;
